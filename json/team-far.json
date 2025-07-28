@@ -1,0 +1,73 @@
+{
+    "description": "飞行自主系统组团队成员信息 - 包含教授、研究员、博士后、博士生、硕士生、本科生等职位类型，支持动态加载和链接跳转功能",
+    "members": {
+      "教授": [
+        {
+          "id": 1,
+          "name": "李教授",
+          "image": "images/moren.png",
+          "links": [
+            { "id": 1, "text": "博士生导师 硕士生导师", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 2, "text": "学位：博士学位", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 3, "text": "邮箱: li@university.edu.cn", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 4, "text": "个人主页：https://xxx.xxx.edu.cn/xxx", "href": "https://www.baidu.com/?tn=15007414_20_dg" }
+          ],
+          "affiliation": "李教授，现任XXX大学飞行自主系统组负责人，博士生导师。主要研究方向为飞行器自主导航、多智能体协同控制、无人机集群技术等。在飞行控制系统、自主导航算法等领域发表高水平论文多篇。"
+        },
+        {
+            "id": 2,
+            "name": "张教授",
+            "image": "images/moren.png",
+            "links": [
+              { "id": 1, "text": "博士生导师 硕士生导师", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+              { "id": 2, "text": "学位：博士学位", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+              { "id": 3, "text": "邮箱: li@university.edu.cn", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+              { "id": 4, "text": "个人主页：https://xxx.xxx.edu.cn/xxx", "href": "https://www.baidu.com/?tn=15007414_20_dg" }
+            ],
+            "affiliation": "李教授，现任XXX大学飞行自主系统组负责人，博士生导师。主要研究方向为飞行器自主导航、多智能体协同控制、无人机集群技术等。在飞行控制系统、自主导航算法等领域发表高水平论文多篇。"
+          }
+      ],
+      "研究员": [
+        {
+          "id": 1,
+          "name": "王研究员",
+          "image": "images/moren.png",
+          "links": [
+            { "id": 1, "text": "关于王研究员", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 2, "text": "副研究员", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 3, "text": "邮箱: li@university.edu.cn", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 4, "text": "个人主页：https://xxx.xxx.edu.cn/xxx", "href": "https://www.baidu.com/?tn=15007414_20_dg" }
+          ],
+          "affiliation": "XXX大学飞行自主系统研究院"
+        }
+      ],
+      "博士后": [
+        {
+          "id": 1,
+          "name": "张博士",
+          "image": "images/moren.png",
+          "href": "https://example.com/zhang"
+        },
+        {
+          "id": 2,
+          "name": "刘博士",
+          "image": "images/moren.png",
+          "href": "https://example.com/liu"
+        }
+      ],
+      "博士生": [
+        { "id": 1, "name": "陈飞行", "image": "images/moren.png", "href": "https://example.com/chen" },
+        { "id": 2, "name": "赵自主", "image": "images/moren.png", "href": "https://example.com/zhao" },
+        { "id": 3, "name": "孙系统", "image": "images/moren.png", "href": "https://example.com/sun" }
+      ],
+      "硕士生": [
+        { "id": 1, "name": "周飞行", "image": "images/moren.png", "href": "https://example.com/zhou" },
+        { "id": 2, "name": "吴自主", "image": "images/moren.png", "href": "https://example.com/wu" }
+      ],
+      "本科生": [
+        { "id": 1, "name": "张飞行", "image": "images/moren.png", "href": "https://example.com/zhang-student" },
+        { "id": 2, "name": "李自主", "image": "images/moren.png", "href": "https://example.com/li-student" }
+      ]
+    }
+  }
+  

@@ -1,0 +1,622 @@
+/* 新闻详情页面专用样式 */
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.nav-logo h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #000;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+
+.search-icon {
+    font-size: 1.1rem;
+}
+
+/* 下拉菜单 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    min-width: 200px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 汉堡菜单 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* 面包屑导航 */
+.breadcrumb {
+    background: #333;
+    padding: 60px 0 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.breadcrumb h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.breadcrumb h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    margin: 15px auto 20px;
+}
+
+.breadcrumb-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+    content: '»';
+    margin-left: 10px;
+    color: #ccc;
+}
+
+.breadcrumb-item a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: white;
+}
+
+.breadcrumb-item.active span {
+    color: #ccc;
+    font-weight: 500;
+}
+
+/* 新闻详情区域 */
+.news-detail {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.news-article {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.news-header {
+    padding: 0 0 30px 0;
+    text-align: center;
+    border-bottom: none;
+    background: none;
+}
+
+.news-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.news-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.news-date, .news-author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.news-date::before {
+    content: '•';
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.news-author::before {
+    content: '•';
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.news-content {
+    padding: 30px 0 0 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Markdown内容样式 */
+.news-content {
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    font-size: 2.2rem;
+}
+
+.news-content h1 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: #333;
+    margin: 60px 0 40px 0;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 20px;
+}
+
+.news-content h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #333;
+    margin: 50px 0 30px 0;
+}
+
+.news-content h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 44px 0 24px 0;
+}
+
+.news-content p {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.news-content ul, .news-content ol {
+    margin: 30px 0;
+    padding-left: 60px;
+}
+
+.news-content li {
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+}
+
+.news-content strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.news-content em {
+    font-style: italic;
+    color: #666;
+}
+
+.news-content img {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}
+
+.news-content video {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}
+
+.news-content blockquote {
+    border-left: 4px solid #667eea;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #666;
+}
+
+.news-content hr {
+    border: none;
+    border-top: 1px solid #e9ecef;
+    margin: 30px 0;
+}
+
+.news-content code {
+    background-color: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.news-content pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.news-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.content-text {
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.content-text p {
+    margin-bottom: 15px;
+}
+
+.content-text h2, .content-text h3 {
+    color: #333;
+    margin: 30px 0 15px 0;
+    font-weight: 600;
+}
+
+.content-text h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.content-text h3 {
+    font-size: 1.4rem;
+    color: #667eea;
+}
+
+.content-text ul, .content-text ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.content-text li {
+    margin-bottom: 10px;
+}
+
+.content-image {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.content-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.content-video {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.content-video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-caption {
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.news-footer {
+    padding: 40px 0 0 0;
+    background: none;
+    border-top: none;
+}
+
+.news-navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.news-navigation .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+}
+
+.news-navigation .nav-link:hover {
+    color: #333;
+}
+
+/* 加载状态 */
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.loading i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+/* 错误状态 */
+.error {
+    text-align: center;
+    padding: 60px 20px;
+    color: #dc3545;
+}
+
+.error i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* 页脚 */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .news-header {
+        padding: 30px 20px;
+    }
+
+    .news-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .news-content {
+        padding: 30px 20px;
+        font-size: 1rem;
+    }
+
+    .news-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .news-footer {
+        padding: 20px;
+    }
+
+    .news-navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .news-navigation .nav-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 98%;
+    }
+
+    .nav-container {
+        padding: 0 10px;
+    }
+
+    .news-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .news-content {
+        padding: 20px 15px;
+        font-size: 0.95rem;
+    }
+
+    .content-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .content-text h3 {
+        font-size: 1.2rem;
+    }
+} 

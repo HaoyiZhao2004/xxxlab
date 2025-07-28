@@ -1,0 +1,59 @@
+{
+    "members": {
+      "教授": [
+        {
+          "id": 1,
+          "name": "王教授",
+          "image": "images/moren.png",
+          "links": [
+            { "id": 1, "text": "博士生导师 硕士生导师", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 2, "text": "学位：博士学位", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 3, "text": "邮箱: wang@university.edu.cn", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 4, "text": "个人主页：https://xxx.xxx.edu.cn/xxx", "href": "https://www.baidu.com/?tn=15007414_20_dg" }
+          ],
+          "affiliation": "王教授，现任XXX大学现场智能工程组负责人，博士生导师。主要研究方向为现场智能感知、工业物联网、智能制造系统等。在智能传感器网络、工业自动化控制等领域发表高水平论文多篇。"
+        }
+      ],
+      "研究员": [
+        {
+          "id": 1,
+          "name": "陈研究员",
+          "image": "images/moren.png",
+          "links": [
+            { "id": 1, "text": "关于陈研究员", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 2, "text": "副研究员", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 3, "text": "邮箱: chen@university.edu.cn", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "id": 4, "text": "个人主页：https://xxx.xxx.edu.cn/xxx", "href": "https://www.baidu.com/?tn=15007414_20_dg" }
+          ],
+          "affiliation": "XXX大学现场智能工程研究院"
+        }
+      ],
+      "博士后": [
+        {
+          "id": 1,
+          "name": "刘博士",
+          "image": "images/moren.png",
+          "href": "https://example.com/liu-fire"
+        },
+        {
+          "id": 2,
+          "name": "孙博士",
+          "image": "images/moren.png",
+          "href": "https://example.com/sun-fire"
+        }
+      ],
+      "博士生": [
+        { "id": 1, "name": "李现场", "image": "images/moren.png", "href": "https://example.com/li-fire" },
+        { "id": 2, "name": "赵智能", "image": "images/moren.png", "href": "https://example.com/zhao-fire" },
+        { "id": 3, "name": "周工程", "image": "images/moren.png", "href": "https://example.com/zhou-fire" }
+      ],
+      "硕士生": [
+        { "id": 1, "name": "吴现场", "image": "images/moren.png", "href": "https://example.com/wu-fire" },
+        { "id": 2, "name": "郑智能", "image": "images/moren.png", "href": "https://example.com/zheng-fire" }
+      ],
+      "本科生": [
+        { "id": 1, "name": "张现场", "image": "images/moren.png", "href": "https://example.com/zhang-fire" },
+        { "id": 2, "name": "王智能", "image": "images/moren.png", "href": "https://example.com/wang-fire" }
+      ]
+    }
+  } 

@@ -1,0 +1,21 @@
+{
+  "carousel": [
+    { "id": 1, "image": "images/1.png" },
+    { "id": 2, "image": "images/slide2.jpg" },
+    { "id": 3, "image": "images/slide3.jpg" },
+    { "id": 4, "image": "images/slide4.jpg" },
+    { "id": 5, "image": "images/slide5.jpg" }
+  ],
+  "labInfo": [
+    { "id": 1, "text": "欢迎访问 <strong>XXX实验室</strong>的网站。" },
+    { "id": 2, "text": "本实验室由 XXX教授/负责人 领导，隶属于 XXX学院/研究所/公司，致力于探索和解决前沿科学与工程问题。" },
+    { "id": 3, "text": "我们实验室主要专注于以下研究领域：" },
+    { "id": 4, "text": "XXX；" },
+    { "id": 5, "text": "XXX；" },
+    { "id": 6, "text": "XXX。" }
+  ],
+  "description": {
+    "carousel": "轮播图数据，存放实验室首页顶部的轮播图片信息。",
+    "labInfo": "实验室介绍，每个对象代表一段介绍文字，可以包含 HTML 标签,如 <strong>,<br>,<em>,<u>,&nbsp,&lt,&gt。"
+  }
+}

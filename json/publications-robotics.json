@@ -1,0 +1,259 @@
+{
+    "description": "机器人学论文列表 - 包含论文信息，支持动态加载和链接跳转功能",
+    "publications": {
+        "2024": [
+            {
+            "id": 1,
+            "title": "Distributed Swarm Trajectory Optimization for Formation Flight in Dense Environments",
+            "authors": "Lun Quan, Longji Yin, Chao Xu, Fei Gao",
+            "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+            "status": "under review",
+            "links": [
+            { "text": "preprint", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+            { "text": "code", "href": "#" }
+            ]
+            },
+            {
+            "id": 2,
+            "title": "Star-Convex Constrained Optimization for Visibility Planning with Application to Aerial Inspection",
+            "authors": "Tianyu Liu, Qianhao Wang, Xingguang Zhong, Zhepei Wang, Fu Zhang, Chao Xu, Fei Gao",
+            "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+            "status": "under review",
+            "links": []
+            },
+            {
+            "id": 3,
+            "title": "GPA-Teleoperation: Gaze Enhanced Perception-aware Safe Assistive Aerial Teleoperation",
+            "authors": "Qianhao Wang, Botao He, Zhiren Xun, Chao Xu, Fei Gao",
+            "conference": "IEEE Robotics and Automation Letter (RA-L), ICRA option",
+            "status": "under review",
+            "links": [
+            { "text": "preprint", "href": "#" }
+            ]
+            },
+            {
+            "id": 4,
+            "title": "Meeting-Merging-Mission: A Multi-robot Coordinate Framework for Large-Scale Communication-Limited Exploration",
+            "authors": "Yuman Gao, Yingjian Wang, Xingguang Zhong, Tiankai Yang, Mingyang Wang, Zhixiong Xu, Yongchao Wang, Chao Xu, Fei Gao",
+            "conference": "IEEE Robotics and Automation Letter (RA-L), ICRA option",
+            "status": "under review",
+            "links": [
+            { "text": "preprint", "href": "#" }
+            ]
+            },
+            {
+            "id": 5,
+            "title": "The Visual Inertial-Dynamical Multirotor Dataset",
+            "authors": "Kunyi Zhang, Tiankai Yang, Ziming Ding, Chao Xu, Fei Gao",
+            "conference": "IEEE Robotics and Automation Letter (RA-L), ICRA option",
+            "status": "under review",
+            "links": [
+            { "text": "preprint", "href": "#" },
+            { "text": "video", "href": "#" },
+            { "text": "code&data", "href": "#" }
+            ]
+            },
+            {
+            "id": 6,
+            "title": "TIE: An Autonomous and Adaptive Terrestrial-Aerial Quadrotor",
+            "authors": "Ruibin Zhang, Yuze Wu, Lixian Zhang, Chao Xu, Fei Gao",
+            "conference": "IEEE Robotics and Automation Letter (RA-L), ICRA option",
+            "status": "under review",
+            "links": [
+            { "text": "preprint", "href": "#" }
+            ]
+            },
+            {
+            "id": 7,
+            "title": "Elastic Tracker: A Spatio-temporal Trajectory Planner for Flexible Aerial Tracking",
+            "authors": "Jialin Ji, Neng Pan, Chao Xu, Fei Gao",
+            "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+            "status": "under review",
+            "links": []
+            }
+            ],
+    "2022": [
+    {
+    "id": 1,
+    "title": "Distributed Swarm Trajectory Optimization for Formation Flight in Dense Environments",
+    "authors": "Lun Quan, Longji Yin, Chao Xu, Fei Gao",
+    "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "status": "under review",
+    "links": [
+    { "text": "preprint", "href": "https://www.baidu.com/?tn=15007414_20_dg" },
+    { "text": "code", "href": "#" }
+    ]
+    },
+    {
+    "id": 2,
+    "title": "Star-Convex Constrained Optimization for Visibility Planning with Application to Aerial Inspection",
+    "authors": "Tianyu Liu, Qianhao Wang, Xingguang Zhong, Zhepei Wang, Fu Zhang, Chao Xu, Fei Gao",
+    "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "status": "under review",
+    "links": []
+    },
+    {
+    "id": 3,
+    "title": "GPA-Teleoperation: Gaze Enhanced Perception-aware Safe Assistive Aerial Teleoperation",
+    "authors": "Qianhao Wang, Botao He, Zhiren Xun, Chao Xu, Fei Gao",
+    "conference": "IEEE Robotics and Automation Letter (RA-L), ICRA option",
+    "status": "under review",
+    "links": [
+    { "text": "preprint", "href": "#" }
+    ]
+    },
+    {
+    "id": 4,
+    "title": "Meeting-Merging-Mission: A Multi-robot Coordinate Framework for Large-Scale Communication-Limited Exploration",
+    "authors": "Yuman Gao, Yingjian Wang, Xingguang Zhong, Tiankai Yang, Mingyang Wang, Zhixiong Xu, Yongchao Wang, Chao Xu, Fei Gao",
+    "conference": "IEEE Robotics and Automation Letter (RA-L), ICRA option",
+    "status": "under review",
+    "links": [
+    { "text": "preprint", "href": "#" }
+    ]
+    },
+    {
+    "id": 5,
+    "title": "The Visual Inertial-Dynamical Multirotor Dataset",
+    "authors": "Kunyi Zhang, Tiankai Yang, Ziming Ding, Chao Xu, Fei Gao",
+    "conference": "IEEE Robotics and Automation Letter (RA-L), ICRA option",
+    "status": "under review",
+    "links": [
+    { "text": "preprint", "href": "#" },
+    { "text": "video", "href": "#" },
+    { "text": "code&data", "href": "#" }
+    ]
+    },
+    {
+    "id": 6,
+    "title": "TIE: An Autonomous and Adaptive Terrestrial-Aerial Quadrotor",
+    "authors": "Ruibin Zhang, Yuze Wu, Lixian Zhang, Chao Xu, Fei Gao",
+    "conference": "IEEE Robotics and Automation Letter (RA-L), ICRA option",
+    "status": "under review",
+    "links": [
+    { "text": "preprint", "href": "#" }
+    ]
+    },
+    {
+    "id": 7,
+    "title": "Elastic Tracker: A Spatio-temporal Trajectory Planner for Flexible Aerial Tracking",
+    "authors": "Jialin Ji, Neng Pan, Chao Xu, Fei Gao",
+    "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "status": "under review",
+    "links": []
+    }
+    ],
+    "2020": [
+    {
+    "id": 1,
+    "title": "Autonomous Navigation for Mobile Robots in Complex Environments",
+    "authors": "Wei Chen, Xiaoming Liu, Chao Xu, Fei Gao",
+    "conference": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" },
+    { "text": "code", "href": "#" },
+    { "text": "video", "href": "#" }
+    ]
+    },
+    {
+    "id": 2,
+    "title": "Multi-Robot Coordination for Swarm Intelligence Applications",
+    "authors": "Li Zhang, Ming Wang, Chao Xu, Fei Gao",
+    "conference": "IEEE Transactions on Robotics (TRO)",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" },
+    { "text": "code&data", "href": "#" }
+    ]
+    },
+    {
+    "id": 3,
+    "title": "Deep Learning for Robot Perception and Control",
+    "authors": "Yang Liu, Hong Zhang, Chao Xu, Fei Gao",
+    "conference": "International Journal of Robotics Research (IJRR)",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" },
+    { "text": "dataset", "href": "#" }
+    ]
+    }
+    ],
+    "2019": [
+    {
+    "id": 1,
+    "title": "Robust Control Strategies for Autonomous Vehicles",
+    "authors": "Jun Wang, Lei Chen, Chao Xu, Fei Gao",
+    "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" },
+    { "text": "code", "href": "#" }
+    ]
+    },
+    {
+    "id": 2,
+    "title": "Machine Learning Approaches for Robot Learning",
+    "authors": "Feng Yang, Xiaoli Liu, Chao Xu, Fei Gao",
+    "conference": "Robotics and Autonomous Systems",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" },
+    { "text": "demo", "href": "#" }
+    ]
+    }
+    ],
+    "2018": [
+    {
+    "id": 1,
+    "title": "Advanced Algorithms for Robot Path Planning",
+    "authors": "Hao Liu, Wei Zhang, Chao Xu, Fei Gao",
+    "conference": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" },
+    { "text": "code", "href": "#" }
+    ]
+    }
+    ],
+    "2017": [
+    {
+    "id": 1,
+    "title": "Intelligent Control Systems for Industrial Robotics",
+    "authors": "Peng Wang, Lei Liu, Chao Xu, Fei Gao",
+    "conference": "IEEE Transactions on Industrial Electronics",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" }
+    ]
+    }
+    ],
+    "2016": [
+    {
+    "id": 1,
+    "title": "Novel Approaches to Robot Manipulation",
+    "authors": "Yi Chen, Ming Liu, Chao Xu, Fei Gao",
+    "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" },
+    { "text": "video", "href": "#" }
+    ]
+    }
+    ],
+    "2015": [
+    {
+    "id": 1,
+    "title": "Foundations of Autonomous Robot Navigation",
+    "authors": "Dong Wang, Lei Zhang, Chao Xu, Fei Gao",
+    "conference": "IEEE Transactions on Robotics (TRO)",
+    "status": "published",
+    "links": [
+    { "text": "paper", "href": "#" },
+    { "text": "code", "href": "#" }
+    ]
+    }
+    ]
+    }
+    }
+    

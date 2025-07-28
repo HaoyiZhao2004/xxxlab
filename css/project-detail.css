@@ -1,0 +1,577 @@
+/* 项目详情页面专用样式 */
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.nav-logo h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #000;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f8f9fa;
+}
+
+/* 汉堡菜单样式 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* 面包屑导航样式 */
+.breadcrumb {
+    background: #333;
+    padding: 60px 0 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.breadcrumb h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.breadcrumb h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    margin: 15px auto 20px;
+}
+
+.breadcrumb-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+    content: '»';
+    margin-left: 10px;
+    color: #ccc;
+}
+
+.breadcrumb-item a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: white;
+}
+
+.breadcrumb-item.active span {
+    color: #ccc;
+    font-weight: 500;
+}
+
+/* 项目详情样式 */
+.project-detail {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.project-article {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.project-header {
+    padding: 0 0 30px 0;
+    text-align: center;
+    border-bottom: none;
+    background: none;
+}
+
+.project-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+/* 项目内容样式 */
+.project-content {
+    padding: 30px 0 0 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Markdown内容样式 */
+.project-content {
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    font-size: 2.2rem;
+}
+
+.project-content h1 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: #333;
+    margin: 60px 0 40px 0;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 20px;
+}
+
+.project-content h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #333;
+    margin: 50px 0 30px 0;
+}
+
+.project-content h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 44px 0 24px 0;
+}
+
+.project-content p {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.project-content ul, .project-content ol {
+    margin: 30px 0;
+    padding-left: 60px;
+}
+
+.project-content li {
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+}
+
+.project-content strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.project-content em {
+    font-style: italic;
+    color: #666;
+}
+
+.project-content img {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}
+
+.project-content video {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+}
+
+.project-content blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: #666;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.project-content hr {
+    border: none;
+    height: 1px;
+    background: #e9ecef;
+    margin: 40px 0;
+}
+
+.project-content code {
+    background: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.8rem;
+    color: #e83e8c;
+}
+
+.project-content pre {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 25px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.project-content pre code {
+    background: none;
+    padding: 0;
+    color: #333;
+}
+
+/* 项目底部样式 */
+.project-footer {
+    padding: 40px 0 20px 0;
+    border-top: 1px solid #e9ecef;
+    margin-top: 60px;
+}
+
+.project-navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-navigation .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+}
+
+.project-navigation .nav-link:hover {
+    color: #333;
+}
+
+/* 页脚样式 */
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 80px;
+    font-size: 1rem;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.footer p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* 加载状态样式 */
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.loading i {
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 20px;
+    animation: spin 1s linear infinite;
+}
+
+.loading p {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 错误状态样式 */
+.error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.error-message i {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.error-message p {
+    color: #e74c3c;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .project-header {
+        padding: 0 0 20px 0;
+    }
+
+    .project-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-content {
+        font-size: 1.6rem;
+    }
+
+    .project-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .project-content h2 {
+        font-size: 2rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .project-content p {
+        font-size: 1.6rem;
+    }
+
+    .project-content ul, .project-content ol {
+        font-size: 1.6rem;
+    }
+
+    .project-footer {
+        padding: 30px 0 15px 0;
+    }
+
+    .project-navigation {
+        justify-content: center;
+    }
+
+    .project-navigation .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .nav-container {
+        width: 95%;
+    }
+
+    .project-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .project-content {
+        font-size: 1.4rem;
+    }
+
+    .project-content h1 {
+        font-size: 2rem;
+    }
+
+    .project-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .project-content p {
+        font-size: 1.4rem;
+    }
+
+    .project-content ul, .project-content ol {
+        font-size: 1.4rem;
+    }
+} 
