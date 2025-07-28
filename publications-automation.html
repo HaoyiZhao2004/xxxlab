@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动化 - XXX实验室</title>
+    <link rel="stylesheet" href="css/publications.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>XXX实验室</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">新闻动态</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">研究项目</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="team.html" class="nav-link">研究团队 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html">智能机器人研究组</a></li>
+                        <li><a href="team-far.html">飞行自主系统组</a></li>
+                        <li><a href="team-fire.html">现场智能工程组</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="publications-robotics.html" class="nav-link active">发表论文 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="publications-robotics.html">机器人学</a></li>
+                        <li><a href="publications-automation.html">自动化</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>自动化</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">首页</a> » 自动化
+                </div>
+            </div>
+        </section>
+
+        <!-- 论文列表 -->
+        <section class="publications-section">
+            <div class="container">
+                <!-- 年份筛选 -->
+                <div class="year-filter">
+                    <a href="#2021" class="year-link active">2021</a>
+                    <a href="#2020" class="year-link">2020</a>
+                    <a href="#2019" class="year-link">2019</a>
+                    <a href="#2018" class="year-link">2018</a>
+                    <a href="#2017" class="year-link">2017</a>
+                    <a href="#2016" class="year-link">2016</a>
+                    <a href="#2015" class="year-link">2015</a>
+                </div>
+
+                <!-- 2021年论文 -->
+                <div class="year-section" id="2021">
+                    <h2 class="year-title">2021</h2>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Adaptive Control for Nonlinear Systems with Application to Industrial Automation</strong>
+                                <br>
+                                John Smith, Michael Johnson, David Brown, Sarah Wilson
+                                <br>
+                                <em>IEEE Transactions on Automatic Control</em>
+                                <span class="status under-review">under review</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[preprint]</a>
+                                    <a href="#" class="pub-link">[code]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Model Predictive Control for Smart Grid Automation</strong>
+                                <br>
+                                Robert Chen, Lisa Wang, James Lee, Emily Zhang
+                                <br>
+                                <em>IEEE Conference on Decision and Control (CDC)</em>
+                                <span class="status under-review">under review</span>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Multi-Agent Systems for Industrial Automation Control</strong>
+                                <br>
+                                Thomas Anderson, Maria Garcia, Kevin Kim, Rachel Park
+                                <br>
+                                <em>Automatica</em>
+                                <span class="status under-review">under review</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[preprint]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Intelligent Transportation Systems: Automation and Control Strategies</strong>
+                                <br>
+                                Daniel Martinez, Jennifer Taylor, Christopher Lee, Amanda White
+                                <br>
+                                <em>IEEE American Control Conference (ACC)</em>
+                                <span class="status under-review">under review</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[preprint]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Industrial 4.0: Automation Control Framework for Smart Manufacturing</strong>
+                                <br>
+                                William Johnson, Sophia Chen, Alexander Rodriguez, Olivia Thompson
+                                <br>
+                                <em>Control Engineering Practice</em>
+                                <span class="status under-review">under review</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[preprint]</a>
+                                    <a href="#" class="pub-link">[video]</a>
+                                    <a href="#" class="pub-link">[code&data]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Deep Learning Approaches for Automated Production Line Optimization</strong>
+                                <br>
+                                Benjamin Davis, Isabella Moore, Lucas Anderson, Grace Wilson
+                                <br>
+                                <em>IEEE Transactions on Control Systems Technology</em>
+                                <span class="status under-review">under review</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[preprint]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Robust Control Design for Uncertain Automation Systems</strong>
+                                <br>
+                                Ethan Brown, Chloe Garcia, Nathan Lee, Zoe Martinez
+                                <br>
+                                <em>International Journal of Robust and Nonlinear Control</em>
+                                <span class="status under-review">under review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2020年论文 -->
+                <div class="year-section" id="2020" style="display: none;">
+                    <h2 class="year-title">2020</h2>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Advanced Control Systems for Power Grid Automation</strong>
+                                <br>
+                                Michael Wilson, Sarah Johnson, David Chen, Lisa Wang
+                                <br>
+                                <em>IEEE Transactions on Power Systems</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                    <a href="#" class="pub-link">[code]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Intelligent Manufacturing Systems: Automation and Control</strong>
+                                <br>
+                                Robert Davis, Emily Brown, James Wilson, Maria Garcia
+                                <br>
+                                <em>IEEE Transactions on Industrial Electronics</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                    <a href="#" class="pub-link">[demo]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Distributed Control for Large-Scale Automation Networks</strong>
+                                <br>
+                                Christopher Lee, Amanda White, Kevin Kim, Rachel Park
+                                <br>
+                                <em>Automatica</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                    <a href="#" class="pub-link">[code&data]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2019年论文 -->
+                <div class="year-section" id="2019" style="display: none;">
+                    <h2 class="year-title">2019</h2>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Model-Based Control for Industrial Automation</strong>
+                                <br>
+                                Thomas Anderson, Isabella Moore, Lucas Chen, Grace Wilson
+                                <br>
+                                <em>IEEE Conference on Decision and Control (CDC)</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                    <a href="#" class="pub-link">[code]</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Smart City Automation: Control and Optimization</strong>
+                                <br>
+                                Daniel Martinez, Jennifer Taylor, Nathan Lee, Zoe Brown
+                                <br>
+                                <em>IEEE American Control Conference (ACC)</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                    <a href="#" class="pub-link">[video]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2018年论文 -->
+                <div class="year-section" id="2018" style="display: none;">
+                    <h2 class="year-title">2018</h2>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Robust Control Design for Uncertain Systems</strong>
+                                <br>
+                                William Johnson, Sophia Chen, Alexander Rodriguez, Olivia Thompson
+                                <br>
+                                <em>International Journal of Robust and Nonlinear Control</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2017年论文 -->
+                <div class="year-section" id="2017" style="display: none;">
+                    <h2 class="year-title">2017</h2>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Adaptive Control for Nonlinear Automation Systems</strong>
+                                <br>
+                                Benjamin Davis, Chloe Garcia, Ethan Brown, Nathan Lee
+                                <br>
+                                <em>IEEE Transactions on Automatic Control</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                    <a href="#" class="pub-link">[code]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2016年论文 -->
+                <div class="year-section" id="2016" style="display: none;">
+                    <h2 class="year-title">2016</h2>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Intelligent Control for Industrial Applications</strong>
+                                <br>
+                                John Smith, Michael Johnson, David Brown, Sarah Wilson
+                                <br>
+                                <em>Control Engineering Practice</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                    <a href="#" class="pub-link">[demo]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2015年论文 -->
+                <div class="year-section" id="2015" style="display: none;">
+                    <h2 class="year-title">2015</h2>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <strong>Foundations of Modern Control Theory</strong>
+                                <br>
+                                Robert Chen, Lisa Wang, James Lee, Emily Zhang
+                                <br>
+                                <em>IEEE Transactions on Automatic Control</em>
+                                <span class="status published">published</span>
+                                <div class="publication-links">
+                                    <a href="#" class="pub-link">[paper]</a>
+                                    <a href="#" class="pub-link">[code]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 XXX实验室 – 保留所有权利</p>
+            <p>Powered by HTML/CSS/JS – 智能系统与自动化技术实验室</p>
+        </div>
+    </footer>
+
+    <script src="js/publications-automation.js"></script>
+</body>
+</html> 

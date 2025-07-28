@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞行自主系统组 - XXX实验室</title>
+    <link rel="stylesheet" href="css/team.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>XXX实验室</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">新闻动态</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">研究项目</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="team.html" class="nav-link active">研究团队 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html">智能机器人研究组</a></li>
+                        <li><a href="team-far.html">飞行自主系统组</a></li>
+                        <li><a href="team-fire.html">现场智能工程组</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="publications-robotics.html" class="nav-link">发表论文 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="publications-robotics.html">机器人学</a></li>
+                        <li><a href="publications-automation.html">自动化</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>飞行自主系统组</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">首页</a> » <a href="team.html">研究团队</a> » 飞行自主系统组
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队成员 - 动态加载 -->
+        <section class="team-members-section">
+            <div class="container">
+                <div id="team-members-container">
+                    <!-- 加载提示 -->
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>正在加载团队成员信息...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 XXX实验室 – 保留所有权利</p>
+            <p>Powered by HTML/CSS/JS – 智能系统与自动化技术实验室</p>
+        </div>
+    </footer>
+
+    <script src="js/team-far.js"></script>
+</body>
+</html> 
